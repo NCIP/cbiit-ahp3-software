@@ -1,7 +1,10 @@
+require 'watir-webdriver'
+
 require_relative 'password'
 
 module AhpAudit
   class AnthillPro < Watir::Browser
+    attr_writer :password
     include Password
 
     def initialize

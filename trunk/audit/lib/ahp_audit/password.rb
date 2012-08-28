@@ -1,3 +1,5 @@
+require 'highline/import'
+
 module AhpAudit
 	module Password
 		def get_password(prompt="Password: ")
