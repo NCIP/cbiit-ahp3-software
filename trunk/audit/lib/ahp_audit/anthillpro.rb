@@ -1,4 +1,5 @@
 require 'watir-webdriver'
+require 'active_support/all'
 
 require_relative 'password'
 

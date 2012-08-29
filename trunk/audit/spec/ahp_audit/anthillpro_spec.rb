@@ -4,7 +4,7 @@ module AhpAudit
 	describe AnthillPro do
 
 		it "should not allow LDAP user to login without a password" do
-      pending
+      anthill = AhpAudit::AnthillPro.new
     end
 
 		it "should not allow admin to login without a password" do
