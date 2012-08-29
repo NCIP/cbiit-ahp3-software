@@ -3,8 +3,7 @@ require 'ahp_audit/anthillpro'
 module AhpAudit
 	describe AnthillPro do
 
-		it "should not allow LDAP user to login without a password" do
-		end
+		it "should not allow LDAP user to login without a password"
 
 		it "should not allow admin to login without a password" do
 			@anthill = AhpAudit::AnthillPro.new
@@ -12,29 +11,23 @@ module AhpAudit
 			@anthill.close
 		end
 
-		it "should allow admin to login with correct password" do
-		end
+		it "should allow admin to login with correct password"
 
-		it "should have more than 3 agents listening" do
-		end
+		it "should have more than 3 agents listening"
 
-		it "should have more than 3 agents in the build farm" do
-		end
+		it "should have more than 3 agents in the build farm"
 
-		it "should have Dashboard with automated and manual folders" do
-		end
+		it "should have Dashboard with automated and manual folders"
 
-		it "should build maven archetype successfully" do
-		end
+		it "should include LDAP user elkins"
 
-		it "should include LDAP user elkins" do
-		end
+		it "should include LDAP user adamsa"
 
-		it "should include LDAP user adamsa" do
-		end
+		it "should include LDAP user vitroa"
 
-		it "should include LDAP user vitroa" do
-		end
+		it "should build maven archetype successfully"
+
+		it "should not show passwords in build logs"
 
 	end
 end
