@@ -1,0 +1,21 @@
+To install an AHP agent on Windows:
+
+1. Install 7-zip. The 64-bit 7-zip utility is located in the 7-zip folder. It is not needed for the agent install, but the AHP workflows depend on it (Windows does not come with a command-line zip utility)
+
+2. Install Java. A 32-bit version of Java is in the Java folder.
+
+3. Unzip the anthill3-agent-3.7.5_101041.zip on the Windows box. This is located in the AnthillPro folder.
+
+4. Replace the unattended-install-agent.bat in the unzipped folder with the one from the AnthillPro folder.
+
+5. Run unattended-install-agent.bat from the unzipped folder.
+
+6. From the Windows Server Manager, go to Configuration->Services. Click on the Anthill 3 agent service. Click on the LogOn tab, make sure the Log on as is set to Local System account. Back on the General tab, Start the service.
+
+7. At this point the AnthillPro Agent should be running. You may not see it from the AnthillPro server console. If you don't, you need to update the Collaborate Server page and add a firewall rule to allow the Agent and the Server to communicate. This is needed for Agents inside the segmented network. Look for Collaborate pages for other Windows agents as a guide. After the page is updated, contact the Security Team and ask them to apply the firewall rule.
+
+NOTE: Java and 7-zip may already be installed on the Windows Server. Check before installing.
+
+8. From the AnthillPro Server activate the agent and upgrade the agent software.
+
+9. Do the needful to add the agent to the proper Environment, etc.
